@@ -14,6 +14,11 @@ gem 'carrierwave'
 gem 'activerecord', '~>3.2.0'
 gem 'activesupport', '~>3.2.0'
 
+gem 'bcrypt-ruby', '~>3.0.0'
+
+gem 'pry'
+gem 'pry-nav'
+
 gem 'rake'
 
 gem 'shotgun'

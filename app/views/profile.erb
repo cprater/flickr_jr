@@ -1,0 +1,11 @@
+<div class="container">
+	<h1><%=@user.name%> 's Profile</h1>
+
+	<ul>
+		<%@photos.each do |photo|%>
+			<li><h3 class="title"><%=photo.name%><h3></li>
+			<li><img src="<%=photo.photo%>"><li>
+		<%end%>
+	</ul>
+
+</div>

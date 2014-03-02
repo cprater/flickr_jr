@@ -7,3 +7,11 @@
 th {
   text-align: left;
 }
+
+.errors {
+	color: red;
+}
+
+.add-to-album{
+	border: 4px solid green;
+}

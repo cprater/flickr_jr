@@ -1,0 +1,15 @@
+<div class="container">
+	<h1>Add photos to <%=@album.name%></h1>
+
+	<form id="album-edit" action='/new/album/photos' method='POST'>
+		<%if @photos %>
+			<%@photos.each do |photo|%>
+				<img src="<%=photo.photo%>" class="photo" id="<%=photo.id%>">
+			<%end%>
+		<%end%>
+
+		<input type="submit" value="Submit">
+	</form>
+
+	<%session[:current_album] = @album.id%>
+</div>

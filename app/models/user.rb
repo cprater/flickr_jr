@@ -1,3 +1,8 @@
 class User < ActiveRecord::Base
-  mount_uploader :photo, PhotoUploader
+	validates :name, presence: true, uniqueness: true
+
+	has_many :photos
+	has_many :albums
+	
+	has_secure_password
 end
